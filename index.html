@@ -39,11 +39,11 @@
         <script src="data/TR2024Ungdomsskolekretser_3.js"></script>
         <script src="data/Inngriuspesifisertspredtogandrefelt_4.js"></script>
         <script src="data/FerdigutbygdefeltiTrondheim20122023_5.js"></script>
-        <script src="data/BoligfeltbaseTrondheimsregionen1992024_6.js"></script>
+        <script src="data/BoligfeltiTrondheimsregionen1992024_6.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[63.39891058556158,10.380735759801494],[63.45133322151035,10.580001852287346]]);
+        }).fitBounds([[63.277467321199346,10.063307304476577],[63.4870410598502,10.85905538869934]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -372,7 +372,7 @@
             styles: [style_FerdigutbygdefeltiTrondheim20122023_5_0,style_FerdigutbygdefeltiTrondheim20122023_5_1,]
         });
         bounds_group.addLayer(layer_FerdigutbygdefeltiTrondheim20122023_5);
-        function pop_BoligfeltbaseTrondheimsregionen1992024_6(feature, layer) {
+        function pop_BoligfeltiTrondheimsregionen1992024_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">FELT_NR</th>\
@@ -439,11 +439,11 @@
             popup.setContent(updatedContent);
         }
 
-        function style_BoligfeltbaseTrondheimsregionen1992024_6_0(feature) {
+        function style_BoligfeltiTrondheimsregionen1992024_6_0(feature) {
             switch(String(feature.properties['Modningsgrad'])) {
                 case 'Vedtatt plan under utbygging':
                     return {
-                pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
+                pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.5)',
                 dashArray: '',
@@ -458,7 +458,7 @@
                     break;
                 case 'Vedtatt detalj- eller områderegulering (uten krav)':
                     return {
-                pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
+                pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.5)',
                 dashArray: '',
@@ -473,7 +473,7 @@
                     break;
                 case 'Igangsatt detaljplan':
                     return {
-                pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
+                pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.5)',
                 dashArray: '',
@@ -488,7 +488,7 @@
                     break;
                 case 'Vedtatt områdeplan (med krav om detaljregulering)':
                     return {
-                pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
+                pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.5)',
                 dashArray: '',
@@ -503,7 +503,7 @@
                     break;
                 case 'Igangsatt områdeplan':
                     return {
-                pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
+                pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.5)',
                 dashArray: '',
@@ -518,7 +518,7 @@
                     break;
                 case 'Kommuneplanens arealdel (KPA) eller vedtatt KDP':
                     return {
-                pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
+                pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.5)',
                 dashArray: '',
@@ -533,7 +533,7 @@
                     break;
                 case 'Igangsatt kommunedelplan (KDP)':
                     return {
-                pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
+                pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,0.5)',
                 dashArray: '',
@@ -548,7 +548,7 @@
                     break;
                 case 'LNFR i KPA (vurdert som mulig boligfelt)':
                     return {
-                pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
+                pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
                 opacity: 1,
                 color: 'rgba(0,0,0,0.5)',
                 dashArray: '',
@@ -563,23 +563,23 @@
                     break;
             }
         }
-        map.createPane('pane_BoligfeltbaseTrondheimsregionen1992024_6');
-        map.getPane('pane_BoligfeltbaseTrondheimsregionen1992024_6').style.zIndex = 406;
-        map.getPane('pane_BoligfeltbaseTrondheimsregionen1992024_6').style['mix-blend-mode'] = 'normal';
-        var layer_BoligfeltbaseTrondheimsregionen1992024_6 = new L.geoJson(json_BoligfeltbaseTrondheimsregionen1992024_6, {
+        map.createPane('pane_BoligfeltiTrondheimsregionen1992024_6');
+        map.getPane('pane_BoligfeltiTrondheimsregionen1992024_6').style.zIndex = 406;
+        map.getPane('pane_BoligfeltiTrondheimsregionen1992024_6').style['mix-blend-mode'] = 'normal';
+        var layer_BoligfeltiTrondheimsregionen1992024_6 = new L.geoJson(json_BoligfeltiTrondheimsregionen1992024_6, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_BoligfeltbaseTrondheimsregionen1992024_6',
-            layerName: 'layer_BoligfeltbaseTrondheimsregionen1992024_6',
-            pane: 'pane_BoligfeltbaseTrondheimsregionen1992024_6',
-            onEachFeature: pop_BoligfeltbaseTrondheimsregionen1992024_6,
-            style: style_BoligfeltbaseTrondheimsregionen1992024_6_0,
+            dataVar: 'json_BoligfeltiTrondheimsregionen1992024_6',
+            layerName: 'layer_BoligfeltiTrondheimsregionen1992024_6',
+            pane: 'pane_BoligfeltiTrondheimsregionen1992024_6',
+            onEachFeature: pop_BoligfeltiTrondheimsregionen1992024_6,
+            style: style_BoligfeltiTrondheimsregionen1992024_6_0,
         });
-        bounds_group.addLayer(layer_BoligfeltbaseTrondheimsregionen1992024_6);
-        map.addLayer(layer_BoligfeltbaseTrondheimsregionen1992024_6);
+        bounds_group.addLayer(layer_BoligfeltiTrondheimsregionen1992024_6);
+        map.addLayer(layer_BoligfeltiTrondheimsregionen1992024_6);
         var baseMaps = {};
         var overlaysTree = [
-            {label: 'Boligfeltbase Trondheimsregionen 19.9.2024<br /><table><tr><td style="text-align: center;"><img src="legend/BoligfeltbaseTrondheimsregionen1992024_6_Vedtattplanunderutbyggingpermatrikkelen13mars20240.png" /></td><td>Vedtatt plan under utbygging (per matrikkelen 13. mars 2024)</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltbaseTrondheimsregionen1992024_6_Vedtattdetaljellerområdereguleringutenkravomdetaljregulering1.png" /></td><td>Vedtatt detalj- eller områderegulering (uten krav om detaljregulering)</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltbaseTrondheimsregionen1992024_6_Igangsattdetaljplan2.png" /></td><td>Igangsatt detaljplan</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltbaseTrondheimsregionen1992024_6_Vedtattområdeplanmedkravomdetaljregulering3.png" /></td><td>Vedtatt områdeplan (med krav om detaljregulering)</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltbaseTrondheimsregionen1992024_6_Igangsattområdeplan4.png" /></td><td>Igangsatt områdeplan</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltbaseTrondheimsregionen1992024_6_KommuneplanensarealdelKPAellervedtattKDP5.png" /></td><td>Kommuneplanens arealdel (KPA) eller vedtatt KDP</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltbaseTrondheimsregionen1992024_6_IgangsattkommunedelplanKDP6.png" /></td><td>Igangsatt kommunedelplan (KDP)</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltbaseTrondheimsregionen1992024_6_LNFRiKPAvurdertsommuligboligfelt7.png" /></td><td>LNFR i KPA (vurdert som mulig boligfelt)</td></tr></table>', layer: layer_BoligfeltbaseTrondheimsregionen1992024_6},
+            {label: 'Boligfelt i Trondheimsregionen 19.9.2024<br /><table><tr><td style="text-align: center;"><img src="legend/BoligfeltiTrondheimsregionen1992024_6_Vedtattplanunderutbyggingpermatrikkelen13mars20240.png" /></td><td>Vedtatt plan under utbygging (per matrikkelen 13. mars 2024)</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltiTrondheimsregionen1992024_6_Vedtattdetaljellerområdeplanutenkravomdetaljplan1.png" /></td><td>Vedtatt detalj- eller områdeplan (uten krav om detaljplan)</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltiTrondheimsregionen1992024_6_Igangsattdetaljplan2.png" /></td><td>Igangsatt detaljplan</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltiTrondheimsregionen1992024_6_Vedtattområdeplanmedkravomdetaljregulering3.png" /></td><td>Vedtatt områdeplan (med krav om detaljregulering)</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltiTrondheimsregionen1992024_6_Igangsattområdeplan4.png" /></td><td>Igangsatt områdeplan</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltiTrondheimsregionen1992024_6_KommuneplanensarealdelKPAellervedtattKDP5.png" /></td><td>Kommuneplanens arealdel (KPA) eller vedtatt KDP</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltiTrondheimsregionen1992024_6_IgangsattkommunedelplanKDP6.png" /></td><td>Igangsatt kommunedelplan (KDP)</td></tr><tr><td style="text-align: center;"><img src="legend/BoligfeltiTrondheimsregionen1992024_6_LNFRiKPAvurdertsommuligboligfelt7.png" /></td><td>LNFR i KPA (vurdert som mulig boligfelt)</td></tr></table>', layer: layer_BoligfeltiTrondheimsregionen1992024_6},
             {label: '<img src="legend/FerdigutbygdefeltiTrondheim20122023_5.png" /> Ferdig utbygde felt i Trondheim 2012-2023', layer: layer_FerdigutbygdefeltiTrondheim20122023_5},
             {label: '<img src="legend/Inngriuspesifisertspredtogandrefelt_4.png" /> Inngår i uspesifisert, spredt og andre felt', layer: layer_Inngriuspesifisertspredtogandrefelt_4},
             {label: '<img src="legend/TR2024Ungdomsskolekretser_3.png" /> TR2024 Ungdomsskolekretser', layer: layer_TR2024Ungdomsskolekretser_3},
